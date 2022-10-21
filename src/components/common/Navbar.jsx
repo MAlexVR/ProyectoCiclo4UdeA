@@ -1,28 +1,29 @@
-import '../../assets/styles/navbar.css';
-import Logo from '../../assets/images/logo-bo-512.png';
+import "../../assets/styles/navbar.css";
+import Logo from "../../assets/images/logo-bo-512.png";
 import { useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faHeart, faHome, faSearch, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { Badge } from '@mui/material';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars,
+  faHeart,
+  faHome,
+  faSearch,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Badge } from "@mui/material";
 
 const Navbar = () => {
-
   useEffect(() => {
-
-    const list = document.querySelectorAll('.list');
+    const list = document.querySelectorAll(".list");
 
     function activeLink() {
-        list.forEach((item) =>
-        item.classList.remove('active'));
-        this.classList.add('active');
-        event.preventDefault();
+      list.forEach((item) => item.classList.remove("active"));
+      this.classList.add("active");
+      event.preventDefault();
     }
 
-    list.forEach((item) =>
-    item.addEventListener('click',activeLink))
-
-  }, [])
+    list.forEach((item) => item.addEventListener("click", activeLink));
+  }, []);
 
   return (
     <>
@@ -120,6 +121,6 @@ const Navbar = () => {
       </div>
     </>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

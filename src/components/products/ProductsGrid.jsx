@@ -15,7 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const ProductsGrid = () => {
   return (
-    <div className='products-grid'>
+    <div className="products-grid">
       <Box m={10}>
         <Box
           m={0}
@@ -39,9 +39,9 @@ const ProductsGrid = () => {
           </Typography>
         </Box>
         <Grid container spacing={6}>
-        {ProductData.map((ProductData) => (
-          <Grid item key={ProductData.id} xl={3} lg={4} md={6} sm={6}>
-            <Item>
+          {ProductData.map((ProductData) => (
+            <Grid item key={ProductData.id} xl={3} lg={4} md={6} sm={6}>
+              <Item>
                 <ProductCard
                   id={ProductData.id}
                   title={ProductData.title}
@@ -58,14 +58,13 @@ const ProductsGrid = () => {
                   timeLeft={ProductData.timeLeft}
                   totalSales={ProductData.totalSales}
                 />
-              
-            </Item>
-          </Grid>
+              </Item>
+            </Grid>
           ))}
         </Grid>
       </Box>
     </div>
-  )
-}
+  );
+};
 
 export default ProductsGrid;
