@@ -16,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const ProductsGrid = () => {
   return (
     <div className="products-grid">
-      <Box m={10}>
+      <Box m={5}>
         <Box
           m={0}
           pt={0}
@@ -26,12 +26,12 @@ const ProductsGrid = () => {
         >
           <Typography
             component="strong"
-            mb={2}
+            mb={4}
             variant="h2"
             align="center"
             style={{
               color: "#12284C",
-              paddingTop: "20px",
+              paddingTop: "0px",
               fontFamily: "Nunito Sans",
             }}
           >

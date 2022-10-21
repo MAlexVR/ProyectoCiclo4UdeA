@@ -1,6 +1,6 @@
+import { useEffect } from "react";
 import "../../assets/styles/navbar.css";
 import Logo from "../../assets/images/logo-bo-512.png";
-import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -40,7 +40,7 @@ const Navbar = () => {
           </form>
         </div>
         <div className="icons">
-          <a href="" className="fa">
+          <a href="/login" className="fa">
             <FontAwesomeIcon icon={faUser} />
           </a>
           <a href="" className="fa">
@@ -52,7 +52,7 @@ const Navbar = () => {
               sx={{
                 "& .MuiBadge-badge": {
                   color: "white",
-                  backgroundColor: "#AF7C58",
+                  backgroundColor: "#cc9e6a",
                 },
               }}
             >
@@ -98,7 +98,7 @@ const Navbar = () => {
                   sx={{
                     "& .MuiBadge-badge": {
                       color: "white",
-                      backgroundColor: "#AF7C58",
+                      backgroundColor: "#cc9e6a",
                     },
                   }}
                 >
