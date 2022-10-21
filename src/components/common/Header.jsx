@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/scss/bootstrap.scss";
-import "../../assets/styles/custom-colors.scss";
+import "../../assets/styles/custom-colors.css";
 
 import {
   MDBContainer,
@@ -32,23 +32,19 @@ const nav__links = [
 const Header = () => {
   return (
     <header className="header">
-      <MDBNavbar expand="lg" light bgColor="artelak-lightblue">
-        <MDBContainer fluid>
-          <MDBNavbarNav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-artelak-lightblue">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
             {nav__links.map((item, index) => (
-              <MDBNavbarItem key={index}>
-                <MDBNavbarLink
-                  aria-current="page"
-                  href={item.path}
-                  style={{ color: "#12284C" }}
-                >
+              <li class="nav-item" key={index}>
+                <a class="nav-link" aria-current="page" href={item.path}>
                   {item.display}
-                </MDBNavbarLink>
-              </MDBNavbarItem>
+                </a>
+              </li>
             ))}
-          </MDBNavbarNav>
-        </MDBContainer>
-      </MDBNavbar>
+          </ul>
+        </div>
+      </nav>
     </header>
   );
 };
