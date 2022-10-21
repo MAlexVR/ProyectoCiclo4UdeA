@@ -1,5 +1,5 @@
-import '../assets/styles/navbar.css';
-import Logo from '../assets/images/logo-bo-512.png';
+import '../../assets/styles/navbar.css';
+import Logo from '../../assets/images/logo-bo-512.png';
 import { useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faHeart, faHome, faSearch, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'

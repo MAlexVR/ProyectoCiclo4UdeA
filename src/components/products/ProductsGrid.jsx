@@ -1,4 +1,3 @@
-import '../assets/styles/products-grid.css';
 //import "bootstrap/dist/css/bootstrap.min.css";
 import ProductCard from "./ProductCard";
 import Box from "@mui/material/Box";
